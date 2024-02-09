@@ -1,0 +1,38 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "aboutCard": {
+        "title": "Hello, I'm a Fullstack Developer with 2 years of experience.",
+        "text": "I care a lot about using design for positive impact and enjoy creating user-centric, delightful, and human experiences.",
+        "buttonDownload": "Download CV",
+        "buttonAbout": "Contact me"
+    },
+    "projectPreviewLayout": {
+        "project1":{
+            "title": "Funkoshop - Ecommerce",
+            "description": "Fullstack project - NodeJS, ExpressJS and MySQL"
+        },
+        "project2":{
+            "title": "Shopi - Ecommerce",
+            "description": "React project with ViteJS and tailwind"
+        },
+        "project3":{
+            "title": "MarkoToDo - ToDo App",
+            "description": "React project with tailwind"
+        },
+        "project4":{
+            "title": "MM landing - Landing Page",
+            "description": "Landing page with api fetch"
+        }
+    },
+    "footer": {
+        "title": "Want to contact me?",
+        "text": "Feel free to reach out for collaborations or just a friendly hello",
+        "buttonContact": "Contact me",
+        "copyright": "All rights reserved - M! © 2024"
+    }
+}
