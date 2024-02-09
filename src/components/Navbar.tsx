@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { AppContext } from "../context/AppContext";
 import ModeLight from "../../public/IconsSVG/modeLight.svg";
-import ModeDark from "../../public/IconsSVG/modedark.svg"
+import ModeDark from "../../public/IconsSVG/modeDark.svg"
 import Bars from "../../public/IconsSVG/bars.svg";
 import XMark from "../../public/IconsSVG/x-mark.svg";
 import esJson from "../languages/es/es.json";
