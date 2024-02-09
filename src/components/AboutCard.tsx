@@ -26,7 +26,7 @@ const AboutCard = () => {
                   {context.content.aboutCard.text}
                 </p>
                 <div className="flex flex-col lg:flex-row items-center gap-4 md:pt-10 justify-self-end">
-                  <a href='/CV_compressed.pdf' download='CV_compressed.pdf' target='_blank' rel='noreferrer' className="dark:text-black dark:bg-slate-100 text-center bg-black text-white max-sm:font-normal font-medium py-3 px-12 max-sm:w-[14rem] rounded-full w-60 lg:w-auto hover:opacity-80 transition duration-200 hover:ease-linear">
+                  <a href='/CV/CV_compressed.pdf' download='CV_compressed.pdf' target='_blank' rel='noreferrer' className="dark:text-black dark:bg-slate-100 text-center bg-black text-white max-sm:font-normal font-medium py-3 px-12 max-sm:w-[14rem] rounded-full w-60 lg:w-auto hover:opacity-80 transition duration-200 hover:ease-linear">
                     {context.content.aboutCard.buttonDownload}
                   </a>
                   <a href="#contact" className="dark:text-white dark:border-slate-200 dark:hover:bg-slate-100 dark:hover:text-black text-center max-sm:font-normal font-medium py-3 px-12 max-sm:w-[14rem] rounded-full w-60 lg:w-auto border border-black transition duration-200 hover:ease-linear hover:bg-black hover:text-white">
