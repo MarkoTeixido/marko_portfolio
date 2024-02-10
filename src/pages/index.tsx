@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="description" content="portfolio build with next" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="WYIp1wRnskkmMmMrItvDHtsH-RaVuEzVkutBaDHhF70" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/IconsSVG/brandingIcon.svg" />
       </Head>
       
       <Navbar />
