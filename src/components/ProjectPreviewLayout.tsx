@@ -7,7 +7,7 @@ const ProjectPreviewLayout = () => {
                 name="Funkoshop - Ecommerce"
                 description="Fullstack project - NodeJS, ExpressJS and MySQL"
                 urlProject="https://github.com/MarkoTeixido/FunkoshopCaC-Backend"
-                imageUrl="/ProjectsPics/project-1.png"
+                imageUrl="/ProjectsPics/shotpic3.png"
                 bgColor="#685cdd"
                 dark
             />
@@ -15,7 +15,7 @@ const ProjectPreviewLayout = () => {
                 name="Shopi - Ecommerce"
                 description="React project with ViteJS and tailwind"
                 urlProject="https://github.com/MarkoTeixido/react-shopi"
-                imageUrl="/ProjectsPics/project-2.png"
+                imageUrl="/ProjectsPics/shot2pic3.png"
                 bgColor="#313442"
                 dark
             />
@@ -23,7 +23,7 @@ const ProjectPreviewLayout = () => {
                 name="MarkoToDo - ToDo App"
                 description="React project with tailwind"
                 urlProject="https://github.com/MarkoTeixido/react-todo"
-                imageUrl="/ProjectsPics/project-3.png"
+                imageUrl="/ProjectsPics/shot3pic1.png"
             />
             <ProjectPreviewCard
                 name="MM landing - Landing Page"
