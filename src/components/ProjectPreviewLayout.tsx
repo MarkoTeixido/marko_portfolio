@@ -1,22 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import ProjectPreviewCard from "../components/ProjectPreviewCard";
 
 const ProjectPreviewLayout = () => {
     const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
 
+    const handleResize = useCallback(() => {
+        setIsSmallScreen(window.innerWidth <= 768);
+    }, []);
+
     useEffect(() => {
-        const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 768);
-        };
-
         handleResize();
-
         window.addEventListener('resize', handleResize);
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [handleResize]);
 
     const device = isSmallScreen ? 'M' : 'D';
 

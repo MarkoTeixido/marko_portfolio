@@ -8,11 +8,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="portfolio build with next" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="es" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Marko Teixido's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#ffffff" />
         <meta name="google-site-verification" content="WYIp1wRnskkmMmMrItvDHtsH-RaVuEzVkutBaDHhF70" />
         <link rel="icon" href="/IconsSVG/brandingIcon.svg" />
+        <title>Portfolio</title>
       </Head>
       
       <Navbar />

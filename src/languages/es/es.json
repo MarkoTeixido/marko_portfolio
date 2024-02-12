@@ -14,19 +14,19 @@
     "projectPreviewLayout": {
         "project1":{
             "title": "Funkoshop - Ecommerce",
-            "description": "Fullstack project - NodeJS, ExpressJS and MySQL"
+            "description": "Proyecto Fullstack - NodeJS, ExpressJS y MySQL"
         },
         "project2":{
             "title": "Shopi - Ecommerce",
-            "description": "React project with ViteJS and tailwind"
+            "description": "Proyecto React con ViteJS y tailwind"
         },
         "project3":{
             "title": "MarkoToDo - ToDo App",
-            "description": "React project with tailwind"
+            "description": "Proyecto React con tailwind"
         },
         "project4":{
             "title": "MM landing - Landing Page",
-            "description": "Landing page with api fetch"
+            "description": "Landing page con api fetch"
         }
     },
     "footer": {
