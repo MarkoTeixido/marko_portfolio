@@ -11,6 +11,7 @@ import enJson from "../languages/en/en.json";
 interface Styles {
   container: string;
   ul: string;
+  li: string;
 };
 
 const Navbar = () => {
@@ -53,7 +54,8 @@ const Navbar = () => {
   //navbar styles responsive
   const [styles, setStyles] = useState<Styles>({
     container: "",
-    ul: ""
+    ul: "",
+    li:"",
   });
 
   useEffect(() => {
@@ -61,12 +63,14 @@ const Navbar = () => {
       if (window.innerWidth < 768) {
         setStyles({
           container: `absolute max-w-[800px] top-[3.5rem] left-0 z-20 flex flex-col justify-center ${context.isOpenNavbarMobile ? "" : "hidden"}`,
-          ul: "w-screen h-screen top-0 z-20 p-5 flex flex-col items-center gap-4 bg-slate-50 dark:bg-gray-700 text-md dark:text-slate-50 text-zinc-400"
+          ul: "w-screen h-screen top-0 z-20 p-5 flex flex-col items-center gap-4 bg-slate-50 dark:bg-zinc-800 text-md dark:text-slate-200 text-zinc-400",
+          li: "border-b-2 dark:border-slate-400",
         });
       } else {
         setStyles({
           container: `${context.isOpenNavbarMobile ? "block" : ""}`,
-          ul: "flex gap-12 text-md dark:text-slate-50 text-zinc-400"
+          ul: "flex gap-12 text-md dark:text-slate-50 text-zinc-400",
+          li:"",
         });
       }
     };
@@ -98,13 +102,13 @@ const Navbar = () => {
           <div>
             <div className={styles.container}>
               <ul className={styles.ul}>
-                <li>
+                <li className={styles.li}>
                   <Link href="#home" className="focus:text-black focus:font-medium hover:text-zinc-700 dark:hover:dark:hover:text-white/75 transition duration-200 hover:ease-linear">{context.content.navbar.home}</Link>
                 </li>
-                <li>
+                <li className={styles.li}>
                   <Link href="#projects" className="focus:text-black focus:font-medium hover:text-zinc-700 dark:hover:dark:hover:text-white/75 transition duration-200 hover:ease-linear">{context.content.navbar.projects}</Link>
                 </li>
-                <li>
+                <li className={styles.li}>
                   <Link href="#contact" className="focus:text-black focus:font-medium hover:text-zinc-700 dark:hover:dark:hover:text-white/75 transition duration-200 hover:ease-linear">{context.content.navbar.contact}</Link>
                 </li>
               </ul>

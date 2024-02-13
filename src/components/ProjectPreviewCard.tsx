@@ -37,7 +37,7 @@ const ProjectPreview: React.FC<Props> = ({
               width={800}
               height={800}
               quality={100}
-              priority
+              priority={true}
               className="h-full w-full object-cover"
             />
           </div>
