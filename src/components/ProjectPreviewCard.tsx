@@ -1,6 +1,7 @@
 import React from "react";
-import Arrow from "../../public/IconsSVG/arrow.svg";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import Arrow from "../../public/IconsSVG/arrow.svg";
 
 interface Props {
   name?: string | undefined;
@@ -15,7 +16,7 @@ const ProjectPreview: React.FC<Props> = ({
   name = "project name",
   description = "This is an amazing project",
   urlProject = "",
-  imageUrl = "/ProjectsPics/project-1.png",
+  imageUrl = "https://i.imgur.com/wO7okdu.png",
   bgColor = "#e4e4e7",
   dark = false,
 }) => {
@@ -28,21 +29,31 @@ const ProjectPreview: React.FC<Props> = ({
       variants={PreviewAnimation}
     >
       <a href={urlProject}>
-  <article className="h-full w-full max-md:p-6 md:px-10 md:py-6 duration-500ms hover:scale-105 bg-cover bg-no-repeat bg-center transition-all ease-in-out" style={{ backgroundImage: `url('${imageUrl}')`, backgroundSize: 'cover', width: '100%'}}>
-    <div className=" flex justify-between">
-      <div>
-        <h2 className={`font-medium text-lg ${dark ? "text-white" : ""}`}>{name}</h2>
-        <p className={`text-sm ${dark ? "text-zinc-300" : "text-zinc-500"}`}>{description}</p>
-      </div>
-      <div>
-        <div className="max-sm:w-10 max-sm:h-10 md:h-12 md:w-12 max-md:p-2 bg-white rounded-full flex justify-center items-center cursor-pointer">
-          <Arrow className="w-6 h-6" />
-        </div>
-      </div>
-      
-    </div>
-  </article>
-</a>
+        <article className="h-full w-full max-md:p-6 md:px-10 md:py-6 duration-500ms hover:scale-105 transition-all ease-in-out relative">
+          <div className="absolute inset-0">
+            <Image
+              src={imageUrl}
+              alt="Descripción de la imagen"
+              width={800}
+              height={800}
+              quality={100}
+              priority
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="flex justify-between relative z-10">
+            <div>
+              <h2 className={`font-medium text-lg ${dark ? "text-white" : ""}`}>{name}</h2>
+              <p className={`text-sm ${dark ? "text-zinc-300" : "text-zinc-500"}`}>{description}</p>
+            </div>
+            <div>
+              <div className="max-sm:w-10 max-sm:h-10 md:h-12 md:w-12 max-md:p-2 bg-white rounded-full flex justify-center items-center cursor-pointer">
+                <Arrow className="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+        </article>
+      </a>
     </motion.div>
   );
 };

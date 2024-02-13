@@ -20,34 +20,34 @@ const ProjectPreviewLayout = () => {
     const device = isSmallScreen ? 'M' : 'D';
 
     return (
-        <section id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 te">
+        <section id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
             <ProjectPreviewCard
                 name="Funkoshop - Ecommerce"
                 description="Fullstack project - NodeJS, ExpressJS and MySQL"
                 urlProject="https://github.com/MarkoTeixido/FunkoshopCaC-Backend"
-                imageUrl={`/ProjectsPics/shotpic${device}.png`}
+                imageUrl={isSmallScreen ? 'https://i.imgur.com/Jy0Ua2Z.png' : 'https://i.imgur.com/6BEVHYE.png'}
                 bgColor="#685cdd"
                 dark
             />
             <ProjectPreviewCard
                 name="Shopi - Ecommerce"
-                description="React project with ViteJS and tailwind"
+                description="React project with ViteJS and Tailwind"
                 urlProject="https://github.com/MarkoTeixido/react-shopi"
-                imageUrl={`/ProjectsPics/shot2pic${device}.png`}
+                imageUrl={isSmallScreen ? 'https://i.imgur.com/cKWqcom.png' : 'https://i.imgur.com/cbV1ooh.png'}
                 bgColor="#313442"
                 dark
             />
             <ProjectPreviewCard
                 name="MarkoToDo - ToDo App"
-                description="React project with tailwind"
+                description="React project with Tailwind"
                 urlProject="https://github.com/MarkoTeixido/react-todo"
-                imageUrl={`/ProjectsPics/shot3pic${device}.png`}
+                imageUrl={isSmallScreen ? 'https://i.imgur.com/hCIp6wz.png' : 'https://i.imgur.com/sPpafvb.png'}
             />
             <ProjectPreviewCard
                 name="MM landing - Landing Page"
                 description="Landing page with api fetch"
                 urlProject="https://github.com/MarkoTeixido/landing_MM"
-                imageUrl={`/ProjectsPics/shot4pic${device}.png`}
+                imageUrl={isSmallScreen ? 'https://i.imgur.com/wO7okdu.png' : 'https://i.imgur.com/AM4x7xU.png'}
                 bgColor="#4e4e56"
                 dark
             />

@@ -88,10 +88,10 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between items-center gap-12 max-md:gap-3">
           <div className="flex gap-3">
-            <button onClick={toggleLanguage} className="text-xs font-medium dark:text-slate-50 dark:hover:text-black text-zinc-500 border border-zinc-400 hover:bg-zinc-300 hover:text-zinc-800 rounded-full py-1 px-2 w-9 transition duration-200 hover:ease-linear"> 
+            <button onClick={toggleLanguage} aria-label="language mode" className="text-xs font-medium dark:text-slate-50 dark:hover:text-black text-zinc-500 border border-zinc-400 hover:bg-zinc-300 hover:text-zinc-800 rounded-full py-1 px-2 w-9 transition duration-200 hover:ease-linear"> 
               {context.language === "ES" ? "EN" : "ES" }
             </button>
-            <button onClick={toggleTheme} className="text-md font-normal dark:text-slate-50 dark:hover:text-black text-zinc-500 border border-zinc-400 hover:bg-zinc-300 hover:text-zinc-800 rounded-full py-1 px-2 transition duration-200 hover:ease-linear">
+            <button onClick={toggleTheme} aria-label="light/dark theme" className="text-md font-normal dark:text-slate-50 dark:hover:text-black text-zinc-500 border border-zinc-400 hover:bg-zinc-300 hover:text-zinc-800 rounded-full py-1 px-2 transition duration-200 hover:ease-linear">
               {context.theme === "light" ? <ModeLight strokeWidth="2" /> : <ModeDark strokeWidth="2" />}
             </button>
           </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div>
-              <button onClick={toggleMenu} className="md:hidden text-md font-normal dark:text-slate-50 dark:hover:text-black text-zinc-500 border border-zinc-400 hover:bg-zinc-300 hover:text-zinc-800 rounded-full py-1 px-2 transition duration-200 hover:ease-linear">
+              <button onClick={toggleMenu} aria-label="mobile menu toggle" className="md:hidden text-md font-normal dark:text-slate-50 dark:hover:text-black text-zinc-500 border border-zinc-400 hover:bg-zinc-300 hover:text-zinc-800 rounded-full py-1 px-2 transition duration-200 hover:ease-linear">
                 {context.isOpenNavbarMobile === false ? <Bars strokeWidth="2" /> : <XMark strokeWidth="2" />}
               </button>
             </div>
