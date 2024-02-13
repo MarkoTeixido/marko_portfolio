@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "home": "Home",
+        "home": "Inicio",
         "about": "Sobre mi",
         "projects": "Proyectos",
         "contact": "Contacto"
@@ -31,7 +31,7 @@
     },
     "footer": {
         "title": "Quieres contactarme?",
-        "text": "Feel free to reach out for collaborations or just a friendly hello",
+        "text": "Siéntete libre de ponerte en contacto por consultas de trabajo, colaboraciones o simplemente para un saludo",
         "buttonContact": "Contactame",
         "copyright": "All rights reserved - M! © 2024"
     }

@@ -7,7 +7,7 @@
     },
     "aboutCard": {
         "title": "Hello, my name's Marko Teixido and I'm a Fullstack Developer.",
-        "text": "I care a lot about using design for positive impact and enjoy creating user-centric, delightful, and human experiences.",
+        "text": "Intense interest in innovation and the creation of digital experiences. I enjoy transforming ideas into code with a unique and creative touch.",
         "buttonDownload": "Download CV",
         "buttonAbout": "Contact me"
     },
@@ -31,7 +31,7 @@
     },
     "footer": {
         "title": "Want to contact me?",
-        "text": "Feel free to reach out for collaborations or just a friendly hello",
+        "text": "Feel free to reach out for job, collaborations, or just a friendly hello.",
         "buttonContact": "Contact me",
         "copyright": "All rights reserved - M! © 2024"
     }
