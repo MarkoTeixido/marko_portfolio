@@ -18,11 +18,11 @@
         },
         "project2":{
             "title": "Shopi - Ecommerce",
-            "description": "Proyecto React con ViteJS y tailwind"
+            "description": "Proyecto React con ViteJS y Tailwind"
         },
         "project3":{
             "title": "MarkoToDo - ToDo App",
-            "description": "Proyecto React con tailwind"
+            "description": "Proyecto React con Tailwind"
         },
         "project4":{
             "title": "MM landing - Landing Page",
