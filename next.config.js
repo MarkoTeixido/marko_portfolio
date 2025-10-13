@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
@@ -9,8 +9,13 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['i.imgur.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
-
-module.exports = nextConfig;
