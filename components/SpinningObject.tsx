@@ -68,9 +68,11 @@ function SpinningShape({ isDark }: { isDark: boolean }) {
     const positions = useMemo(() => {
         const pos = new Float32Array(particlesCount * 3);
         for (let i = 0; i < particlesCount * 3; i++) {
-            // Deterministic random-like values using Math.sin to avoid sync/hydration mismatches
-            // scaling by a large prime-ish number gives a pseudo-random look
-            pos[i] = (Math.sin(i * 123.456) - 0.5) * 4;
+            // High-quality pseudo-random generator to match the visual "scattering" of Math.random
+            // while ensuring deterministic results to avoid hydration mismatches.
+            const k = i + 1;
+            const random = Math.abs(Math.sin(k * 12.9898) * 43758.5453) % 1;
+            pos[i] = (random - 0.5) * 4;
         }
         return pos;
     }, []);
