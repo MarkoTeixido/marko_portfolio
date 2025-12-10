@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import MouseFollower from "./MouseFollower";
 import TimeDisplay from "./TimeDisplay";
 import { useLanguage } from "@/context/LanguageContext";

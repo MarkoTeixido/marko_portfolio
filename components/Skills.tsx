@@ -99,9 +99,9 @@ const Marquee = ({ items, direction, speed }: { items: MarqueeItem[], direction:
                         style={{ "--skill-color": skill.color } as React.CSSProperties}
                     >
                         <skill.icon
-                            className="text-5xl md:text-6xl text-muted-foreground/30 transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:text-[var(--skill-color)]"
+                            className="text-5xl md:text-6xl text-muted-foreground/30 transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:text-[var(--skill-color)] group-active:grayscale-0 group-active:opacity-100 group-active:scale-110 group-active:text-[var(--skill-color)]"
                         />
-                        <span className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs font-medium tracking-wider text-muted-foreground whitespace-nowrap">
+                        <span className="absolute -bottom-8 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 text-xs font-medium tracking-wider text-muted-foreground whitespace-nowrap">
                             {skill.name}
                         </span>
                     </div>
