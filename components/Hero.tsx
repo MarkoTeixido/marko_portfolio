@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import MouseFollower from "./MouseFollower";
 import TimeDisplay from "./TimeDisplay";
 import { useLanguage } from "@/context/LanguageContext";
@@ -20,7 +22,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="space-y-12 z-10 relative"
             >
-                <div className="sm:space-y-2 md:space-y-6">
+                <div className="space-y-6">
                     <div className="flex items-center gap-2 text-lg md:text-xl font-medium text-muted-foreground">
                         <span>{t.hero.basedIn}</span>
                         <span className="inline-block">→</span>
