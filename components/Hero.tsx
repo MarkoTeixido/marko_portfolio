@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import MouseFollower from "./MouseFollower";
 import TimeDisplay from "./TimeDisplay";
 import { useLanguage } from "@/context/LanguageContext";
@@ -13,16 +11,16 @@ export default function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 max-w-5xl mx-auto relative overflow-hidden">
+        <section className="min-h-[60vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-12 max-w-5xl mx-auto relative overflow-hidden">
             <MouseFollower />
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="space-y-12 z-10 relative"
+                className="space-y-8 md:space-y-12 z-10 relative"
             >
-                <div className="space-y-6">
+                <div className="space-y-3 md:space-y-6">
                     <div className="flex items-center gap-2 text-lg md:text-xl font-medium text-muted-foreground">
                         <span>{t.hero.basedIn}</span>
                         <span className="inline-block">→</span>
