@@ -2,17 +2,20 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import {
     SiJavascript, SiTypescript, SiNextdotjs, SiReact, SiTailwindcss,
     SiNodedotjs, SiExpress, SiSupabase, SiPostgresql, SiMysql, SiSequelize, SiMongodb,
     SiDocker, SiGit, SiGithub, SiGithubactions, SiVitest,
-    SiPostman, SiFigma
+    SiPostman
 } from "react-icons/si";
 const FigmaIcon = ({ className, style }: { className?: string, style?: React.CSSProperties }) => (
-    <img
+    <Image
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         alt="Figma"
+        width={64}
+        height={64}
         className={`w-12 h-12 md:w-16 md:h-16 opacity-30 ${className}`}
         style={style}
     />
@@ -61,7 +64,7 @@ export default function Skills() {
                     </h2>
                 </div>
 
-                <div className="relative flex flex-col gap-10 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                <div className="relative flex flex-col gap-10 mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     {/* Row 1 - Left */}
                     <Marquee items={row1} direction="left" speed={40} />
 
@@ -90,7 +93,7 @@ const Marquee = ({ items, direction, speed }: { items: MarqueeItem[], direction:
                     ease: "linear",
                     duration: speed,
                 }}
-                className="flex flex-shrink-0 gap-16 py-4 px-8 min-w-full"
+                className="flex shrink-0 gap-16 py-4 px-8 min-w-full"
             >
                 {[...items, ...items].map((skill, index) => (
                     <div
@@ -99,7 +102,7 @@ const Marquee = ({ items, direction, speed }: { items: MarqueeItem[], direction:
                         style={{ "--skill-color": skill.color } as React.CSSProperties}
                     >
                         <skill.icon
-                            className="text-5xl md:text-6xl text-muted-foreground/30 transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:text-[var(--skill-color)] group-active:grayscale-0 group-active:opacity-100 group-active:scale-110 group-active:text-[var(--skill-color)]"
+                            className="text-5xl md:text-6xl text-muted-foreground/30 transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:text-(--skill-color) group-active:grayscale-0 group-active:opacity-100 group-active:scale-110 group-active:text-(--skill-color)"
                         />
                         <span className="absolute -bottom-8 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 text-xs font-medium tracking-wider text-muted-foreground whitespace-nowrap">
                             {skill.name}

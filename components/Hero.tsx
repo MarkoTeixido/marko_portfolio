@@ -11,7 +11,7 @@ export default function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="min-h-[70vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-12 max-w-5xl mx-auto relative overflow-hidden">
+        <section className="min-h-[60vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-12 max-w-5xl mx-auto relative overflow-hidden">
             <MouseFollower />
 
             <motion.div
@@ -37,18 +37,18 @@ export default function Hero() {
 
                 <div className="space-y-3 text-xl md:text-2xl font-medium text-muted-foreground max-w-3xl">
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                        <span className="min-w-fit flex-shrink-0">{t.hero.currently}</span>
-                        <span className="hidden md:inline flex-shrink-0">→</span>
+                        <span className="min-w-fit shrink-0">{t.hero.currently}</span>
+                        <span className="hidden md:inline shrink-0">→</span>
                         <span className="text-foreground font-bold">{t.hero.role}</span>
                     </div>
                     {/* <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                        <span className="min-w-fit flex-shrink-0">{t.hero.previously}</span>
-                        <span className="hidden md:inline flex-shrink-0">→</span>
+                        <span className="min-w-fit shrink-0">{t.hero.previously}</span>
+                        <span className="hidden md:inline shrink-0">→</span>
                         <span className="text-foreground font-bold">{t.hero.prevRole}</span>
                     </div> */}
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                        <span className="min-w-fit flex-shrink-0">{t.hero.delivering}</span>
-                        <span className="hidden md:inline flex-shrink-0">→</span>
+                        <span className="min-w-fit shrink-0">{t.hero.delivering}</span>
+                        <span className="hidden md:inline shrink-0">→</span>
                         <span className="text-foreground font-bold">{t.hero.solutions}</span>
                     </div>
                 </div>

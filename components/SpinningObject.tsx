@@ -2,7 +2,7 @@
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, Environment, PerspectiveCamera, OrbitControls } from "@react-three/drei";
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import * as THREE from "three";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -64,11 +64,16 @@ function SpinningShape({ isDark }: { isDark: boolean }) {
     // Create particles
     const particlesGeometry = new THREE.BufferGeometry();
     const particlesCount = 50;
-    const positions = new Float32Array(particlesCount * 3);
 
-    for (let i = 0; i < particlesCount * 3; i++) {
-        positions[i] = (Math.random() - 0.5) * 4;
-    }
+    const positions = useMemo(() => {
+        const pos = new Float32Array(particlesCount * 3);
+        for (let i = 0; i < particlesCount * 3; i++) {
+            // Deterministic random-like values using Math.sin to avoid sync/hydration mismatches
+            // scaling by a large prime-ish number gives a pseudo-random look
+            pos[i] = (Math.sin(i * 123.456) - 0.5) * 4;
+        }
+        return pos;
+    }, []);
 
     particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
