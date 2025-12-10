@@ -11,7 +11,7 @@ export default function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="min-h-[60vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-12 max-w-5xl mx-auto relative overflow-hidden">
+        <section className="min-h-[70vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-12 max-w-5xl mx-auto relative overflow-hidden">
             <MouseFollower />
 
             <motion.div
