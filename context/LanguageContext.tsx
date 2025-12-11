@@ -157,7 +157,7 @@ const translations: Translations = {
             cvUrl: "/CV_marko-ES.pdf",
         },
         hero: {
-            basedIn: "Basado en Villa Mercedes, SL",
+            basedIn: "De Villa Mercedes, SL",
             greeting: "Hola, soy Marko.",
             currently: "Actualmente",
             previously: "Anteriormente",

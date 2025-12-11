@@ -176,7 +176,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
-              <span className="text-sm font-medium">CV</span>
+              <span className="text-xl font-medium">CV</span>
             </Link>
             <Link
               href="https://linkedin.com"
