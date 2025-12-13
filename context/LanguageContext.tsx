@@ -150,7 +150,7 @@ const translations: Translations = {
     },
     es: {
         nav: {
-            work: "Proyectos",
+            work: "Proyectos Destacados",
             about: "Sobre mí",
             skills: "Habilidades",
             contact: "Contacto",
