@@ -61,7 +61,7 @@ export default function Projects() {
                                                 setFilter(null);
                                                 setIsDropdownOpen(false);
                                             }}
-                                            className={`w-full text-left px-3 py-2 text-sm rounded-md transition-all duration-200 ${filter === null ? "bg-muted font-medium" : "hover:bg-muted/30 hover:shadow-[0_2px_8px_rgba(0,0,0,0.05)] active:scale-[0.99] active:bg-muted/50"
+                                            className={`w-full text-left px-3 py-2 text-sm rounded-md transition-all duration-200 ${filter === null ? "bg-muted font-medium" : "hover:bg-muted/20 hover:[text-shadow:_0_1px_4px_rgba(0,0,0,0.2)] active:scale-[0.99]"
                                                 }`}
                                         >
                                             {t.projects.allTechnologies}
@@ -73,7 +73,7 @@ export default function Projects() {
                                                     setFilter(tag);
                                                     setIsDropdownOpen(false);
                                                 }}
-                                                className={`w-full text-left px-3 py-2 text-sm rounded-md transition-all duration-200 ${filter === tag ? "bg-muted font-medium" : "hover:bg-muted/30 hover:shadow-[0_2px_8px_rgba(0,0,0,0.05)] active:scale-[0.99] active:bg-muted/50"
+                                                className={`w-full text-left px-3 py-2 text-sm rounded-md transition-all duration-200 ${filter === tag ? "bg-muted font-medium" : "hover:bg-muted/20 hover:[text-shadow:_0_1px_4px_rgba(0,0,0,0.2)] active:scale-[0.99]"
                                                     }`}
                                             >
                                                 {tag}
