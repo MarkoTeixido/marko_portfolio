@@ -55,7 +55,7 @@ export default function Projects() {
                                     exit={{ opacity: 0, y: 10 }}
                                     className="absolute right-0 top-full mt-2 w-56 bg-background border border-border rounded-lg shadow-lg z-20 overflow-hidden"
                                 >
-                                    <div className="max-h-60 overflow-y-auto p-1 overscroll-contain">
+                                    <div className="max-h-60 overflow-y-auto p-1 overscroll-contain" data-lenis-prevent>
                                         <button
                                             onClick={() => {
                                                 setFilter(null);
