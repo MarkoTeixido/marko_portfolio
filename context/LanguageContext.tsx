@@ -150,7 +150,7 @@ const translations: Translations = {
     },
     es: {
         nav: {
-            work: "Proyectos Destacados",
+            work: "Proyectos",
             about: "Sobre mí",
             skills: "Habilidades",
             contact: "Contacto",
@@ -167,7 +167,7 @@ const translations: Translations = {
             solutions: "Soluciones Escalables ☻",
         },
         projects: {
-            title: "Proyectos",
+            title: "Proyectos Destacados",
             allTechnologies: "Todas las Tecnologías",
             viewDemo: "Ver Demo",
             readMore: "Leer más",
@@ -194,8 +194,8 @@ const translations: Translations = {
                     image: "https://res.cloudinary.com/dp7jr9k94/image/upload/v1765402126/Gemini_Generated_Image_fpsownfpsownfpso_men6zq.png",
                     title: "Funkoshop",
                     description: "Tienda online de figuras Funko, desarrollado con Node.js y Express, que gestiona productos, usuarios y pedidos con integración a base de datos relacional.",
-                    tags: ["Node.js", "Express.js", "JavaScript", "MySQL", "Sequelize", "REST API"],
-                    linkRepo: "https://github.com/MarkoTeixido/FunkoshopCaC-Backend",
+                    tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Express.js", "MySQL", "Sequelize", "JWT"],
+                    linkRepo: "https://github.com/MarkoTeixido/Funkoshop",
                     linkDemo: "https://funkoshopcac.vercel.app/",
                 }
             ]
