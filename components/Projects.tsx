@@ -2,8 +2,9 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useLanguage, Project } from "@/context/LanguageContext";
+import { useClickOutside } from "@/hooks/useClickOutside";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 
@@ -17,6 +18,9 @@ export default function Projects() {
     const [filter, setFilter] = useState<string | null>(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+    const dropdownRef = useRef<HTMLDivElement>(null);
+    useClickOutside(dropdownRef, () => setIsDropdownOpen(false));
 
     const filteredProjects = filter
         ? projects.filter((p) => p.tags.includes(filter))
@@ -34,7 +38,7 @@ export default function Projects() {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                     <h2 className="text-3xl font-bold tracking-tight">{t.projects.title}</h2>
 
-                    <div className="relative">
+                    <div className="relative" ref={dropdownRef}>
                         <button
                             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                             className="flex items-center gap-2 px-4 py-2 text-sm font-medium border border-border rounded-lg hover:bg-muted/20 transition-colors min-w-[150px] justify-between"
@@ -51,7 +55,7 @@ export default function Projects() {
                                     exit={{ opacity: 0, y: 10 }}
                                     className="absolute right-0 top-full mt-2 w-56 bg-background border border-border rounded-lg shadow-lg z-20 overflow-hidden"
                                 >
-                                    <div className="max-h-60 overflow-y-auto p-1">
+                                    <div className="max-h-60 overflow-y-auto p-1 overscroll-contain">
                                         <button
                                             onClick={() => {
                                                 setFilter(null);
