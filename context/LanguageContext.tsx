@@ -116,7 +116,7 @@ const translations: Translations = {
                     image: "https://res.cloudinary.com/dp7jr9k94/image/upload/v1765402126/Gemini_Generated_Image_fpsownfpsownfpso_men6zq.png",
                     title: "Funkoshop",
                     description: "Online Funko store developed with Next.js, Node.js and MySQL, managing products, users and orders with relational database integration.",
-                    tags: ["Node.js", "Express.js", "JavaScript", "MySQL", "Sequelize", "REST API"],
+                    tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Express.js", "MySQL", "Sequelize", "JWT"],
                     linkRepo: "https://github.com/MarkoTeixido/FunkoshopCaC-Backend",
                     linkDemo: "https://funkoshopcac.vercel.app/",
                 }
